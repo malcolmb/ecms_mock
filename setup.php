@@ -28,10 +28,10 @@ class Smarty_CV3Setup extends SmartyBC {
 
         parent::__construct();
         //If you are experiencing any issues use the absolute path as that is what is recommended by Smarty.
-		$this->setTemplateDir('./smarty/templates');
-		$this->setCompileDir('./smarty/templates_c');
-		$this->setCacheDir('./smarty/cache');
-		$this->setConfigDir('./smarty/configs');
+		$this->setTemplateDir('./templates');
+		$this->setCompileDir('./templates_c');
+		$this->setCacheDir('./cache');
+		$this->setConfigDir('./configs');
 
 		$my_security_policy = new Smarty_Security($this);
 		$my_security_policy->php_functions = array();
